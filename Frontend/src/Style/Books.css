@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+}
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+.book {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.book img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-color: aqua;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
