@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "./../Style/Add.css";
 
 function Add() {
   const [book, setBook] = useState({
@@ -31,6 +32,7 @@ function Add() {
 
   return (
     <div className="form">
+      <h1 className="form-title">Add Book.</h1>
       <input
         type="text"
         placeholder="Title"
@@ -55,7 +57,9 @@ function Add() {
         onChange={handleChange}
         name="Price"
       />
-      <button onClick={handleClick}>Add</button>
+      <button className="book-add-button" onClick={handleClick}>
+        Add Book
+      </button>
     </div>
   );
 }

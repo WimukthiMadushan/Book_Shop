@@ -34,6 +34,7 @@ function Update() {
 
   return (
     <div className="form">
+      <h1>Update Book.</h1>
       <input
         type="text"
         placeholder="Title"
@@ -58,7 +59,9 @@ function Update() {
         onChange={handleChange}
         name="Price"
       />
-      <button onClick={handleClick}>Update</button>
+      <button className="book-add-button" onClick={handleClick}>
+        Update
+      </button>
     </div>
   );
 }
